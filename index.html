@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal DB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div id="main">
+<div id="header">
+    <div id="logo">
+        <span>Cook Food Happy Mood</span>
+    </div>
+    <!-- favorite icon to view the list of your favorites -->
+    <div id="favorites" onclick="favorite_list()">
+      <div><i class="fa fa-heart" style="font-size: x-large;"></i></div><div>Favourites</div>
+    </div>
+</div>
+<!-- Search your recipe here -->
+<div id="search">
+    <label for="find" ><i class="fa fa-cutlery" aria-hidden="true"></i></label>
+    <input id="find" placeholder="search your favourite food" type="text">
+    <button   type="submit" onclick="search()"><i class="fa fa-search" style="font-size: x-large;"></i></button>
+</div>
+<!-- div to show search results -->
+<div id="search_result"></div>
+</div>
+</div>
+<!-- div to show meal details -->
+<div id="meal_details">
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
